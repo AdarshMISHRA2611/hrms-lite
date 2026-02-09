@@ -1,0 +1,132 @@
+/* ---------- GLOBAL ---------- */
+body {
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ---------- PAGE WRAPPER ---------- */
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+/* ---------- MAIN CONTAINER ---------- */
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  width: 125%;
+  max-width: 1500px; /* controls how wide the layout is */
+}
+
+/* ---------- HEADINGS ---------- */
+h1 {
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #334155;
+  margin-top: 10px;
+}
+
+/* ---------- SECTION CARDS ---------- */
+.section {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* ---------- FORM ELEMENTS ---------- */
+input,
+select {
+  padding: 9px 12px;
+  margin: 6px 8px 12px 0;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+/* ---------- BUTTONS ---------- */
+button {
+  padding: 9px 16px;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 6px;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #4f46e5, #4338ca);
+}
+
+/* ---------- DELETE BUTTON ---------- */
+.delete-btn {
+  background: #ef4444;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+/* ---------- DIVIDER ---------- */
+hr {
+  margin: 40px 0;
+  border: none;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* ---------- LISTS ---------- */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ---------- STATUS TAGS ---------- */
+.status {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-present {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status-absent {
+  background: #fee2e2;
+  color: #991b1b;
+}
